@@ -37,12 +37,12 @@ const AddTodo = ({ signOut, user }) => {
     try {
       if (!formState.name || !formState.description) return;
       const todo = { ...formState };
-      setTodos([...todos, todo]);
       setFormState(initialState);
       await API.graphql({
         ...graphqlOperation(createTodo, { input: todo }),
         authMode: "AMAZON_COGNITO_USER_POOLS",
       });
+      setTodos([...todos, todo]);
     } catch (err) {
       console.log("error creating todo:", err);
     }
