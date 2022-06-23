@@ -25,7 +25,10 @@ const AddTodo = ({ signOut, user }) => {
 
   async function fetchTodos() {
     try {
-      const todoData = await API.graphql(graphqlOperation(listTodos));
+      const todoData = await API.graphql({
+        ...graphqlOperation(listTodos),
+        authMode: "AMAZON_COGNITO_USER_POOLS",
+      });
       const todos = todoData.data.listTodos.items;
       setTodos(todos);
     } catch (err) {
