@@ -1,10 +1,11 @@
 {
-  "AppSyncApiName": "appsync",
+  "AppSyncApiName": "reactawscognitoampli",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
   "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2022-06-24T18:52:32.791Z",
   "AuthCognitoUserPoolId": {
     "Fn::GetAtt": [
-      "authappsyncc2e72a76",
+      "authreactawscognitoampli6d4db1d0",
       "Outputs.UserPoolId"
     ]
   }

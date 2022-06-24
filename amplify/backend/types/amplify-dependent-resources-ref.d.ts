@@ -1,13 +1,12 @@
 export type AmplifyDependentResourcesAttributes = {
     "api": {
-        "appsync": {
-            "GraphQLAPIKeyOutput": "string",
+        "reactawscognitoampli": {
             "GraphQLAPIIdOutput": "string",
             "GraphQLAPIEndpointOutput": "string"
         }
     },
     "auth": {
-        "appsyncc2e72a76": {
+        "reactawscognitoampli6d4db1d0": {
             "IdentityPoolId": "string",
             "IdentityPoolName": "string",
             "UserPoolId": "string",
@@ -15,9 +14,6 @@ export type AmplifyDependentResourcesAttributes = {
             "UserPoolName": "string",
             "AppClientIDWeb": "string",
             "AppClientID": "string"
-        },
-        "userPoolGroups": {
-            "usersGroupRole": "string"
         }
     }
 }

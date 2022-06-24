@@ -16,7 +16,7 @@ const Home = () => {
 
   async function fetchTodos() {
     try {
-      const todoData = await API.graphql(graphqlOperation(listTodos));
+      const todoData = await API.graphql({...graphqlOperation(listTodos), authMode: "AWS_IAM"});
       const todos = todoData.data.listTodos.items;
       setTodos(todos);
     } catch (err) {

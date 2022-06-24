@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "reactawscognitoampli",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/Users/swakeert/workspace/react_aws_cognito_amplify_appsync/amplify/backend/api/reactawscognitoampli/schema.graphql",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authreactawscognitoampli6d4db1d0"
+    },
+    "conflictResolution": {},
+    "additionalAuthTypes": [
+      {
+        "mode": "AWS_IAM"
+      }
+    ]
+  }
+}
